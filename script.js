@@ -22,6 +22,11 @@ function getData(){// esta function viene del button del html, con el que ejecut
     .catch(error => console.error('Error al llamar a la API: ', error));//Si ocurre un error en cualquier parte del código, el .catch() lo captura y muestra un mensaje en la consola.
 }
 
+getData();// si comentamos en el html el boton de ver posteo y solo declaramos esta function aqui, en la pagina saldran los post sin tener que presionar el boton.
+
+
+
+
 //3- CREAREMOS AHORA UNA FUNCTION QUE SE ENCARGARÁ DE RENDERIZAR Y DARA FORMA AL MAQUETADO DE COMO SERÁ TODA LA LISTA DESORDENADA QUE MENCIONAMOS EN EL HTML COMO: "id=postList"
 
 function renderPostList(){
